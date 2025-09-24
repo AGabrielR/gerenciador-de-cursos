@@ -10,4 +10,9 @@ class Course extends Model
         'name',
         'description',
     ];
+
+    public function teachers()
+    {
+        return $this->hasMany(Teacher::class, 'course_id', 'id');
+    }
 }

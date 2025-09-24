@@ -5,6 +5,8 @@ Listagem de Cursos
 
 
 @section('content')
+  <a class='btn btn-primary text-light mb-1' href="{{ route('teacher.index') }}">Listagem de Professores</a>
+
   <a class='btn btn-info text-light mb-1' href="{{ route('course.form') }}">Novo</a>
   <table class='table table-bordered table-striped table-hover'>
     <tr class='text-center'>
