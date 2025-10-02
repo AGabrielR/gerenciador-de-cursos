@@ -30,7 +30,7 @@
 
     <div class="form-check">
       @foreach ($teachers as $teacher)
-        <input class="form-check-input" @checked($discipline->teachers->pluck('id')->contains($teacher->id)) type="checkbox" name="teacher_id[]" value="{{$teacher->id}}">
+        <input class="form-check-input" @checked($discipline?->teachers->pluck('id')->contains($teacher->id)) type="checkbox" name="teacher_id[]" value="{{$teacher->id}}">
           {{ $teacher->name }}
         <br>
       @endforeach
